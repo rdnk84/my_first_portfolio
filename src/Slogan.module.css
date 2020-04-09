@@ -1,0 +1,23 @@
+.slogan {
+    height: 250px;
+    background-color: #aeffd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: 150px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hireButton {
+
+
+}

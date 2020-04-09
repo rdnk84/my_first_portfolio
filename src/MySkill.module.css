@@ -1,0 +1,26 @@
+.MyskillContainer {
+  width: 300px;
+  height: 100%;
+  border: 1px solid;
+background-color: aliceblue;
+}
+
+
+.mySkillImg {
+  height: 20%;
+
+}
+
+.mySkillImg img{
+width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border: 1px solid;
+}
+
+.mySkillDescription {
+height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
