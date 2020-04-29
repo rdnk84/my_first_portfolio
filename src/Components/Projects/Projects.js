@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Projects.module.css';
-import MySkill from "./MySkill";
+import MySkill from "../Skills/MySkill";
 import MyProject from "./MyProject";
 
 function Projects() {

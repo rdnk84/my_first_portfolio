@@ -1,0 +1,44 @@
+
+
+.navMenu {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+padding-right: 10px;
+
+}
+
+.link {
+color: #282c34;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .navMenu {
+    display: none;
+  }
+    .burggerWrapper {
+        width: 50px;
+        height: 50px;
+        color: white;
+        cursor: pointer;
+        position: relative;
+       align-items: center;
+
+    }
+    .burgerLineFirst {
+      position: absolute;
+      top: 5px;
+      background-color: saddlebrown;
+      width: 35px;
+      height: 2px;
+    }
+
+    .burgerLineSecond {
+      top: 15px;
+    }
+
+    .burgerLineThird {
+      top: 25px;
+    }
+}

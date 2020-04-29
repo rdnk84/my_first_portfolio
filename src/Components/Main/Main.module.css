@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .intro {
@@ -23,4 +24,8 @@
     height: 400px;
     width: 300px;
     background-color: gray;
+}
+
+@media screen and {
+    
 }

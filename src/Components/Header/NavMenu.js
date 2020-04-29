@@ -8,7 +8,9 @@ function NavMenu() {
                 <a href="" className={styles.link}>Навыки</a>
                 <a href="" className={styles.link}>Проекты</a>
                 <a href="" className={styles.link}>Контакты</a>
+
             </div>
+
 
     );
 }

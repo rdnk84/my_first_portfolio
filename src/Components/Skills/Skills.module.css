@@ -1,17 +1,17 @@
-.projects{
-height: 100vh;
-  background-color: #cbcdff;
-  display: flex;
+.skills{
+  min-height: 100vh;
+  background-color: #e9ffa8;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container {
   width: 80%;
   border: 1px solid;
 
 }
-.myProjectsHeader {
+.skillsHeader {
   height: 150px;
   border: 1px solid;
   display: flex;
@@ -19,8 +19,16 @@ height: 100vh;
   align-items: center;
 }
 
-.myProjectsContainer {
-  height: 500px;
+.mySkillsContainer {
+  /*height: 500px;*/
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 736px){
+  .mySkillsContainer {
+    justify-content: center;
+    /*align-items: center;*/
+  }
 }

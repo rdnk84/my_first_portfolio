@@ -1,0 +1,37 @@
+.header {
+    height: 70px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    border: 1px solid;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+
+    .burgerWrapper {
+        width: 40px;
+        height: 24px;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding-right: 15px;
+    }
+
+    .burgerLine {
+        background-color: #7b7b7b;
+        height: 3px;
+        border-radius: 80px;
+    }
+
+}
