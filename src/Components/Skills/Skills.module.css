@@ -1,34 +1,90 @@
-.skills{
-  min-height: 100vh;
-  background-color: #e9ffa8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills {
+    min-height: 100vh;
+    /*background-color: #252527;*/
+    /*background-color: #343a40;*/
+    background-color: #1f1f20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .container {
-  width: 80%;
-  border: 1px solid;
+    width: 80%;
+    /*animation-name: fadeInUp;*/
+    /*animation-fill-mode: both;*/
+    /*animation-duration: 1s;*/
+    /*animation-delay: 5s;*/
+}
+
+/*@keyframes fadeInUp {*/
+/*  0% {*/
+/*    opacity: 0;*/
+/*    transform: translateY(20px);*/
+/*      }*/
+/*  100% {*/
+/*    opacity: 1;*/
+/*    transform: translateY(0);*/
+/*  }*/
+/*}*/
+
+.headerTitle h2 {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.headerTitle {
+    position: relative;
+}
+
+.headerTitle::before {
+    content: '';
+    height: 2px;
+    width: 255px;
+    background-color: rgb(71, 253, 202);
+    transform: translate(-50%, 50%);
+    bottom: -30px;
+    left: 50%;
+    /*margin-top: 50px;*/
+    /*margin-left: -130px;*/
+    position: absolute;
 
 }
-.skillsHeader {
-  height: 150px;
-  border: 1px solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+/*.line {*/
+/*  height: 1px;*/
+/*  width: 155px;*/
+/*  background-color: rgb(71, 253, 202);*/
+/*  margin: 15px 0;*/
+/*}*/
 
 .mySkillsContainer {
-  /*height: 500px;*/
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 70px;
 }
 
-@media screen and (max-width: 736px){
-  .mySkillsContainer {
-    justify-content: center;
-    /*align-items: center;*/
-  }
+
+@media screen and (max-width: 736px) {
+    .mySkillsContainer {
+        justify-content: center;
+        /*align-items: center;*/
+    }
+}
+
+@media screen and (max-width: 777px) {
+    .mySkillsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
 }

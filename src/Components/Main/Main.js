@@ -1,17 +1,18 @@
 import React from "react";
 import styles from './Main.module.css';
+import styleContainer from '../CommonComponents/Container.module.css'
 
 function Main() {
   return (
-    <div className={styles.main}>
-      <div className={styles.container}>
+    <div className={`${styleContainer.mainBackground} ${styles.main}`}>
+      <div className={`${styleContainer.container}`}>
         <div className={styles.intro}>
           <span>Привет!</span>
-          <span>Меня зовут Елена,</span>
-          <span>я начинающий front-end разработчик</span>
+          <span>Я Елена<span>Руденко</span></span>
+          <h1>front-end разработчик</h1>
         </div>
         <div className={styles.photo}>
-          <img src="" alt=""/>
+          <div className={styles.mainPhoto}><img src="" alt=""/></div>
         </div>
       </div>
     </div>

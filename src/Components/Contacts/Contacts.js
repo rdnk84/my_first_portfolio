@@ -1,20 +1,24 @@
 import React from "react";
 import styles from './Contacts.module.css';
+import Title from "../CommonComponents/Title";
+import styleContainer from "../CommonComponents/Container.module.css";
+import Fade from 'react-reveal/Fade';
+import ContactReduxForm from "./ContactMeForm";
+import {contactsAPI} from "./ContactsAPI";
 
 function Contacts() {
+    const onSubmit = (value) => {
+        contactsAPI.sendMessage(value)
+        //как-то отправляем на сервер
+    }
     return (
-        <div className={styles.contacts}>
-            <div className={styles.container}>
-
-                <form action=''>
-                  <h2>Контакты</h2>
-                    <input type="text"/>
-                    <input type="text"/>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button className={styles.submitButton}>Отправить</button>
-                </form>
-
-            </div>
+        <div id="contacts" className={`${styleContainer.mainBackground} ${styles.contacts}`}>
+            <Fade bottom>
+                <div className={`${styleContainer.container}`}>
+                    <Title text={'Контакты'}/>
+                    <ContactReduxForm onSubmit={onSubmit}/>
+                </div>
+            </Fade>
         </div>
     );
 }

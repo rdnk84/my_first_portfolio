@@ -1,7 +1,8 @@
 .MyskillContainer {
   width: 200px;
-  border: 1px solid;
-  background-color: aliceblue;
+  /*padding-bottom: 100px;*/
+  /*border: 1px solid;*/
+  /*background-color: aliceblue;*/
 }
 
 
@@ -13,19 +14,14 @@
 .mySkillImg img{
   width: 50px;
   height: 50px;
-  background-color: aliceblue;
-  border: 1px solid;
+  opacity: 70%;
 }
 
-.mySkillDescription {
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-@media screen and (max-width: 503px){
+
+@media screen and (max-width: 765px){
   .MyskillContainer {
     width: 80%;
+    margin-bottom: 100px;
   }
 }

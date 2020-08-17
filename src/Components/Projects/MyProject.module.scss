@@ -1,0 +1,54 @@
+@import "../CommonComponents/SASS/variables";
+@import "../CommonComponents/SASS/mixins";
+
+.myProjectContainer {
+    width: 450px;
+    background-color: $bgSecondColor;
+    display: flex;
+    flex-direction: column;
+
+    .imageContainer {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        filter: brightness(40%);
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.4;
+            background-color: black;
+        }
+        &:hover {
+            filter: brightness(100%);
+        }
+        .viewBtn {
+            background-color: $primaryColor;
+            color: $textColor;
+            padding: 10px 20px;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    .projectInfo {
+        padding: 25px 20px;
+    }
+    @media screen and (max-width: 1030px) {
+        margin: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .myProjectContainer {
+        margin-bottom: 50px;
+}
+}

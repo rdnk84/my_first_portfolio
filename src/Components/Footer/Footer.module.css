@@ -1,15 +1,54 @@
-.footer{
-height: 300px;
-  background-color: #a7ff9c;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.footer {
+    background-color: #1f1f20;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1px;
+    position: relative;
 }
 
 .container {
-  width: 150px;
-  border: 1px solid;
+    justify-content: flex-start;
+    /*border: 1px solid red;*/
+    flex-direction: column;
+    margin-bottom: 1px;
+
+}
+
+.socialBlock {
+  width: 350px;
+  height: 50px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin: 35px 10px;
+  /*border: 1px solid red;*/
+}
+
+
+.socialIcon img{
+  width: 30px;
+  height: 30px;
+  margin: 3px 20px;
+    opacity: 80%;
+ }
+
+.socialIcon:hover {
+transform: scale(1.8, 1.8);
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    /*box-shadow:0 0 15px #09f6c0;*/
+}
+
+.copyright {
+   padding: 0;
+   margin-top: 20px;
+   font-size: 12px;
+   opacity: 60%;
+}
+@media screen and (max-width: 620px) {
+    .socialIcon img {
+        width: 50%;
+        height: 50%;
+
+    }
 }

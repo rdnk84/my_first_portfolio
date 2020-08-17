@@ -1,21 +1,25 @@
 import React from "react";
-import styles from './MyProject.module.css';
+import styles from './MyProject.module.scss';
+import styleTitleDescription from "../CommonComponents/TitleAndDescription.module.css";
 
-function MyProject() {
+
+
+function MyProject(props) {
     return (
-        <div className={styles.Container}>
 
-                <div className={styles.myProjectImg}>
-                    <img src="" alt="Картинка"/>
-                    <button>Смотреть</button>
+            <div className={styles.myProjectContainer}>
+                <div className={styles.imageContainer} style={props.style}>
+                 <a href="" className={styles.viewBtn}>Смотреть</a>
                 </div>
-                <div className={styles.myProjectDescription}>
-                    <h3>Название проекта</h3>
-                    <p>Краткое описание проекта</p>
+                <div className={styles.projectInfo}>
+                    <h3 className={`${styleTitleDescription.titleH3} ${styles.projectTitle}`}>{props.title}</h3>
+                    <p className={`${styleTitleDescription.description} ${styles.projectDescription}`}
+                       >{props.description}</p>
                 </div>
 
-       </div>
-            );
-            }
+            </div>
 
-            export default MyProject;
+    );
+}
+
+export default MyProject;
